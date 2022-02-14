@@ -1,0 +1,85 @@
+/* Globals */
+body{
+    font-family: Raleway, sans-serif;
+    color: whitesmoke;
+}
+.conteiner{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.align{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.colorText{
+    background: linear-gradient(339deg, #801c35,#1550a1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.vpy{width: 1.5rem;}
+/* Header */
+header{
+    background: linear-gradient(360deg, #181a1ba6, rgba(0, 0, 0, 0)), url(../img/blob_7-7-226.svg);
+    background-repeat: no-repeat;
+    /* background-image: url(../img/blob_7-7-226.svg); */
+}
+.colorTextH{
+    background: linear-gradient(339deg, #e29eb1,#93bbf3);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.contactBox{
+    background-color: #6e3347; 
+    height: 110vh;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.contactBox img{margin: 0 0.5rem;}
+
+.linkCBox a{
+    text-decoration: none;
+    font-weight:bolder;
+    font-size:large;
+    color: white;
+}
+.linkCBox a:hover{
+    text-decoration: none;
+    font-weight:bolder;
+    font-size:large;
+    color: white;
+    background: linear-gradient(339deg, #801c35,#1550a1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* proyectos */
+.img-size{
+    width: 18rem;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    margin-right: -10rem;
+    margin-left: -10rem;
+}
+.cardh{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 23vh;
+    width: 6rem;
+}
+.card{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 26vh;
+    width: 19rem;
+}
+.a card cardpage:hover{
+    background: linear-gradient(360deg, #117eb411, rgba(142, 153, 47, 0.021)), url(../img/SchoolPr/VINATTE.PNG) !important;
+}
+.cardpage:hover{
+    background-color: #117eb411;
+}
