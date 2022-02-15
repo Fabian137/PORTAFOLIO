@@ -3,6 +3,15 @@ body{
     font-family: Raleway, sans-serif;
     color: whitesmoke;
 }
+::-webkit-scrollbar{
+    width:1.5vh
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    width: 1vh;
+    border-radius: 1rem;
+    background-color: #5c5238c9;
+}
 .conteiner{
     max-width: 80%;
     margin: 0 auto;
