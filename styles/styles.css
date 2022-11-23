@@ -1,7 +1,7 @@
 /* Globals */
 body{
     font-family: Raleway, sans-serif;
-    color: whitesmoke;
+    /*color: whitesmoke;*/
 }
 ::-webkit-scrollbar{
     width:1.5vh
@@ -91,4 +91,9 @@ header{
 }
 .cardpage:hover{
     background-color: #117eb411;
+}
+
+
+.card{
+    width: 100%;
 }
