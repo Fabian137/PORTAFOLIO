@@ -21,25 +21,32 @@ body{
     align-items: center;
     /* justify-content: center; */
 }
+.center-stuff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .colorText{
     background: linear-gradient(339deg, #801c35,#1550a1);
     -webkit-background-clip: text;
     color: transparent;
+    font-weight:800;
 }
 .vpy{width: 1.5rem;}
 /* Header */
 header{
-    background: linear-gradient(360deg, #181a1ba6, rgba(0, 0, 0, 0)), url(../img/blob_7-7-226.svg);
+    background: linear-gradient(360deg, #181a1b58, rgba(0, 0, 0, 0)), url(../img/magicpattern-blob-1669665757823.svg);
     background-repeat: no-repeat;
-    /* background-image: url(../img/blob_7-7-226.svg); */
+    background-size: contain;
+    /* background-image: url(../img/magicpattern-blob-1669665757823.svg);*/
 }
 .colorTextH{
-    background: linear-gradient(339deg, #e29eb1,#93bbf3);
+    background: linear-gradient(339deg, #433dff,#151515);
     -webkit-background-clip: text;
     color: transparent;
 }
 .contactBox{
-    background-color: #6e3347; 
+    background: linear-gradient(360deg, #f78741, rgba(227, 224, 33));
     height: 110vh;
     width: 15rem;
     flex-direction: column;
@@ -50,13 +57,13 @@ header{
 
 .linkCBox a{
     text-decoration: none;
-    font-weight:bolder;
+    font-weight:800;
     font-size:large;
-    color: white;
+    color: #212529;
 }
 .linkCBox a:hover{
     text-decoration: none;
-    font-weight:bolder;
+    font-weight:800;
     font-size:large;
     color: white;
     background: linear-gradient(339deg, #801c35,#1550a1);
@@ -83,8 +90,9 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 26vh;
     width: 19rem;
+    padding: 1.5rem; 
+    background-color: #00000000;
 }
 .a card cardpage:hover{
     background: linear-gradient(360deg, #117eb411, rgba(142, 153, 47, 0.021)), url(../img/SchoolPr/VINATTE.PNG) !important;
@@ -97,3 +105,83 @@ header{
 .card{
     width: 100%;
 }
+
+/* MODAL IMGS */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  } 
