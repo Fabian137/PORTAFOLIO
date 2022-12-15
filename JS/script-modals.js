@@ -41,8 +41,13 @@ classImgForModal.forEach(imgID => {
         // console.log(elementURL_IMG)
         modal.style.display = "block";
         modalImg.src = elementURL_IMG;
-        // captionText.innerHTML = imgID.textContent;
-        captionText.insertAdjacentText("beforeend", imgID.textContent) 
+        captionText.innerHTML = imgID.textContent;
+        // captionText.insertAdjacentText("appendChild", imgID.textContent) 
+        // captionText.appendChild(imgID.textContent)
+        // var imgTextContent = document.createTextNode(imgID.textContent);
+        // captionText.removeChild(imgTextContent);
+        // captionText.appendChild(imgTextContent);
+// xd
         // ME CONCATENA LOS CONTENIDOS Y SE HACE ENORME EL CAPTION
     })
 })
