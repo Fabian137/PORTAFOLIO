@@ -1,0 +1,54 @@
+.circulo{
+    /* margin: 5% 10%; */
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    /* background: radial-gradient (circle,yellow,7fffd4); */
+    /* position: absolute; */
+    /* z-index: -1; */
+    /* background: radial-gradient(#da7116,#f1cc26,#aeffa4); */
+
+    background: rgb(152, 55, 204); /*Usamos un background por defecto*/
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(0,255,222,1) 100%); */
+    /* background-size: 300% 100%; Asignamos un ancho para el background del 300% y altura 100% */
+    /* animation: cambiarColor 3s ease infinite;  */
+
+    animation-name: cambiarColor;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes cambiarColor {
+    0%{
+        /* background: radial-gradient(#164eda,#f1cc26); */
+        /* background: linear-gradient(#164eda,#f1cc26); */
+        background-color: #5b7dc0;
+    }
+    50%{
+        background-color: #b48a43;
+        /* background: linear-gradient(#da8516,#f1cc26); */
+    }
+    100%{
+        /* background: linear-gradient(#040a16,#f1cc26); */
+        /* background: radial-gradient(#4c3859,#302d1f,#8bb0f0); */
+        background-color: #ca820e;
+    }
+    /* 0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    } */
+}
+
+@keyframes plankAnimation {
+    0%{
+        transform:  translateY(-3%);
+    }
+    40%{transform: translateY(-15%);}
+    85%{transform: translateY(0%);}
+}
